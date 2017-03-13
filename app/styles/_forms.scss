@@ -5,7 +5,9 @@
     }
   }
 }
-
+label {
+  margin-bottom: 0;
+}
 .form-control {
   @include form-focus-color(coral, $brand-secondary);
   @include form-focus-color(green, $brand-teritary);

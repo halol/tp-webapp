@@ -1,0 +1,14 @@
+@mixin form-focus-color($class, $color) {
+  &.form-#{$class} {
+    &:focus {
+      @include box-shadow(inset 0 -2px 0 $color);
+    }
+  }
+}
+
+.form-control {
+  @include form-focus-color(coral, $brand-secondary);
+  @include form-focus-color(green, $brand-teritary);
+  @include form-focus-color(navy, $brand-navy);
+  @include form-focus-color(link, $brand-link);
+}

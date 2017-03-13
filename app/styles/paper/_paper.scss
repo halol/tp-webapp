@@ -119,7 +119,9 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
 @include btn(default,$btn-default-bg,$btn-default-color);
 @include btn(primary,$btn-primary-bg,$btn-primary-color);
 @include btn(secondary,$brand-secondary,$btn-primary-color);
+@include btn(coral,$brand-secondary,$btn-primary-color);
 @include btn(teritary,$brand-teritary,$btn-primary-color);
+@include btn(green,$brand-teritary,$btn-primary-color);
 @include btn(success,$btn-success-bg,$btn-success-color);
 @include btn(info,$btn-info-bg,$btn-info-color);
 @include btn(warning,$btn-warning-bg,$btn-warning-color);
@@ -131,6 +133,10 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
 
 @include btn-outline(default,$btn-default-color);
 @include btn-outline(primary,$btn-primary-bg);
+@include btn-outline(coral,$brand-secondary);
+@include btn-outline(secondary,$brand-secondary);
+@include btn-outline(green,$brand-teritary);
+@include btn-outline(teritary,$brand-teritary);
 @include btn-outline(success,$btn-success-bg);
 @include btn-outline(info,$btn-info-bg);
 @include btn-outline(warning,$btn-warning-bg);

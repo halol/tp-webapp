@@ -10,6 +10,7 @@ $icon-font-path: '../fonts/';
 @import "buttons";
 @import "navs";
 @import "messages";
+@import "forms";
 @import "flexbox";
 
 * {
@@ -17,15 +18,17 @@ $icon-font-path: '../fonts/';
 }
 
 body {
+
+}
+
+main {
   &.has-tabs {
-    padding-bottom: 44px;
+    padding-bottom: 80px;
   }
   &.has-navbar {
     padding-top: (22px + (14.5px*2));
   }
 }
-
-
 .container-fluid {
   max-width: $screen-xs-min;
   margin-left: auto;

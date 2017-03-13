@@ -1,0 +1,54 @@
+
+// Messages
+.list-group-separator {
+  background: $gray-lighter;
+  padding: $grid-gutter-width/4 $grid-gutter-width;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.list-group-item {
+  .media {
+
+    .profile-picture {
+      background: $gray-lighter;
+      width: 50px;
+      height: 50px;
+    }
+    .media-body {
+      // position: relative;
+        &:after {
+          content: '\f105';
+          font-family: 'FontAwesome';
+          display: block;
+          position: absolute;
+          right: $grid-gutter-width;
+          top: 49%;
+          transform: translateY(-50%);
+          font-size: 3rem;
+          color: $gray-light;
+
+        }
+      .media-heading {
+        font-weight: 600;
+        margin-bottom: 4px;
+        font-size: 1.4rem;
+      }
+      p {
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+        margin: 0;
+        padding: 0;
+        color: black;
+      }
+      time {
+        display: block;
+        margin: 0;
+        padding: 0;
+        margin-top: 4px;
+        line-height: 1rem;
+        font-size: 1rem;
+        color: $gray-light;
+      }
+    }
+  }
+}

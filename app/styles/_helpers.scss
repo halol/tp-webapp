@@ -1,0 +1,48 @@
+.object-fit-contain {
+  object-fit: contain;
+}
+.object-fit-fill {
+  object-fit: fill;
+}
+.object-fit-cover {
+  object-fit: cover;
+}
+
+// Text Align
+.text-left  { text-align: left; }
+.text-right  { text-align: right; }
+.text-center  { text-align: center; }
+
+// Text Transform
+.ttc { text-transform: capitalize; }
+.ttl { text-transform: lowercase; }
+.ttu { text-transform: uppercase; }
+.ttn { text-transform: none; }
+
+.strike       { text-decoration: line-through; }
+.underline    { text-decoration: underline; }
+.no-underline { text-decoration: none; }
+
+
+@mixin bg($class,$bg) {
+  .bg-#{$class} {
+    background-color: $bg;
+  }
+}
+
+@include bg(primary, $brand-primary);
+@include bg(secondary, $brand-secondary);
+@include bg(coral, $brand-secondary);
+@include bg(teritary, $brand-teritary);
+@include bg(green, $brand-teritary);
+@include bg(navy, $brand-navy);
+@include bg(white, white);
+
+
+@include text-emphasis-variant('.text-secondary', $brand-secondary);
+@include text-emphasis-variant('.text-coral', $brand-secondary);
+@include text-emphasis-variant('.text-teritary', $brand-teritary);
+@include text-emphasis-variant('.text-green', $brand-teritary);
+@include text-emphasis-variant('.text-navy', $brand-navy);
+@include text-emphasis-variant('.text-link', $brand-link);
+@include text-emphasis-variant('.text-white', white);

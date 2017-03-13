@@ -1,0 +1,47 @@
+@import "paper/variables";
+@import "paper/paper";
+
+.navigation {
+  border-top: 1px solid $gray-lighter;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  background: white;
+  z-index: 999;
+  box-sizing: border-box;
+  > a {
+    display: inline-block;
+    width: 25%;
+  }
+  .nav-tabs {
+    li {
+      width: 25%;
+      text-align: center;
+      a {
+        i {
+          display: block;
+          font-size: 1.5rem;
+        }
+        font-size: 11px;
+      }
+    }
+  }
+}
+.nav-bar {
+  background-color: white;
+  color: $brand-primary;
+  border-bottom: 1px solid $gray-lighter;
+  @include box-shadow(0 4px 10px rgba(0,0,0,0.2));
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+.nav,
+.breadcrumb {
+  font-family: $font-family-headers;
+}

@@ -31,7 +31,7 @@
   },
   "eslintConfig": {
     "env": {
-      "es6": true,
+      "jquery": true,
       "node": true,
       "browser": true
     },

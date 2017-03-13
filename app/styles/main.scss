@@ -1,186 +1,47 @@
 $icon-font-path: '../fonts/';
-$icon-font-path: '../fonts/';
 @import "paper/variables";
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 @import "paper/paper";
 
+// Components
+@import "messages";
+@import "helpers";
+@import "buttons";
+@import "navs";
+@import "flexbox";
 
-html, body {
-  min-height: 100%;
-  min-height: 100vh;
+* {
+  outline: 1px solid rgba(red,0.2);
 }
 
-
+img {
+  max-width: 100%;
+}
 body {
-  //padding: $grid-gutter-width;
   &.has-tabs {
-    padding-bottom: $grid-gutter-width*4;
+    padding-bottom: 44px;
   }
   &.has-navbar {
-    padding-top: $grid-gutter-width*5;
-  }
-}
-// Buttons Fixes
-.btn-pill {
-  border-radius: 999px;
-}
-
-@include text-emphasis-variant('.text-secondary', $brand-secondary);
-@include text-emphasis-variant('.text-teritary', $brand-teritary);
-@include text-emphasis-variant('.text-navy', $brand-navy);
-@include text-emphasis-variant('.text-link', $brand-link);
-@include text-emphasis-variant('.text-white', white);
-
-legend {
-  font-family: $font-family-headers;
-  border: none;
-}
-
-.nav,
-.breadcrumb {
-  font-family: $font-family-headers;
-}
-
-
-@mixin bg($class,$bg) {
-  .bg-#{$class} {
-    background-color: $bg;
-  }
-}
-
-@include bg(primary, $brand-primary);
-@include bg(secondary, $brand-secondary);
-@include bg(teritary, $brand-teritary);
-@include bg(navy, $brand-navy);
-
-.btn-bold {
-  font-weight: 600;
-}
-
-
-// Fix for the dark backgrounds:
-
-.bg-navy {
-  label,
-  p {
-    color: white;
-  }
-  .form-control {
-    color: white;
-    &:focus {
-      color: $brand-primary;
-    }
-    &::placeholder {
-      color: rgba($brand-primary, .5);
-    }
-  }
-  @include btn-outline(default,white);
-  .btn-outline-default {
-    &:hover,
-    &:active,
-    &:focus {
-      color: $btn-default-color;
-    }
-  }
-}
-
-.marvel-device {
-  position: relative;
-  .screen {
-    text-align: left;
-    // height: 100%;
-    position: relative;
+    padding-top: (22px + (14.5px*2));
   }
 }
 
 
-// Examples
-.login-buttons {
-  //position: absolute;
-  // left: $grid-gutter-width;
-  // bottom: $grid-gutter-width*2;
-  // right: $grid-gutter-width;
-}
-
-.stick-to-bottom {
-
-}
-
-// sliderFrame
-.slide {
-  height: 280px;
-}
-
-.mobile-screen {
-  position: relative;
-  //min-height: 100vh;
-  // height: 100%;
-  width: 100vw;
-  // padding: 20px;
-}
-.container-fluid,
-.max-mobile-width {
+.container-fluid {
   max-width: $screen-xs-min;
   margin-left: auto;
   margin-right: auto;
-  padding-left: $grid-gutter-width/2;
-  padding-right: $grid-gutter-width/2;
+  padding-left: $grid-gutter-width;
+  padding-right: $grid-gutter-width;
 }
 .logo {
   margin: $grid-gutter-width;
+  margin: $grid-gutter-width auto;
+  display: block;
 }
 
-.welcome {
-  background-image: url(../images/bg_w01.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-
-.carousel-indicators {
-  // > li, > li.active {
-  //   width: 7px;
-  //   height: 7px;
-  // }
-}
-
-
-.navigation {
-  border-top: 1px solid $gray-lighter;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  background: white;
-  z-index: 999;
-  box-sizing: border-box;
-  > a {
-    display: inline-block;
-    width: 25%;
-  }
-  .nav-tabs {
-    li {
-      width: 25%;
-      text-align: center;
-      a {
-        i {
-          display: block;
-          font-size: 1.5rem;
-        }
-        font-size: 11px;
-      }
-    }
-  }
-}
-.nav-bar {
-  background-color: $brand-primary;
-  color: white;
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  width: 100%;
+.tab-pane {
+  min-height: 100vh;
 }

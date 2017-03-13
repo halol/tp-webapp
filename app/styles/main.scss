@@ -6,19 +6,16 @@ $icon-font-path: '../fonts/';
 @import "paper/paper";
 
 // Components
-@import "messages";
 @import "helpers";
 @import "buttons";
 @import "navs";
+@import "messages";
 @import "flexbox";
 
 * {
   //outline: 1px solid rgba(red,0.2);
 }
 
-img {
-  max-width: 100%;
-}
 body {
   &.has-tabs {
     padding-bottom: 44px;

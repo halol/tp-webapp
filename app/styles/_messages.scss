@@ -5,17 +5,24 @@
   padding: $grid-gutter-width/4 $grid-gutter-width;
   font-weight: bold;
   text-transform: uppercase;
+
 }
 .list-group-item {
+  //border:0;
+  border-radius: 0;
+  //border-bottom: 1px solid $gray-light;
+  border-left: none;
+  border-right: none;
+  &:last-child {
+    border-radius: 0;
+    //border:0;
+    border-left: none;
+    border-right: none;
+  }
   .media {
-
-    .profile-picture {
-      background: $gray-lighter;
-      width: 50px;
-      height: 50px;
-    }
     .media-body {
-      // position: relative;
+
+
         &:after {
           content: '\f105';
           font-family: 'FontAwesome';
@@ -51,4 +58,13 @@
       }
     }
   }
+}
+
+.profile-picture {
+  background-color: #F2F2F2;
+  // background-image: url(../images/profile_picture.png);
+  width: 50px;
+  height: 50px;
+  outline: none;
+  border: none;
 }

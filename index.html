@@ -26,10 +26,10 @@
   <script src="https://use.fontawesome.com/dd481ed742.js"></script>
 </head>
 
-<body class="bg-navy">
+<body>
   <!--  <main> should be wrapper for each screen -->
   <!-- Maps TEST API key: AIzaSyAaUpThHEc-6FPzEIEtRhxD30huJ1SirsI -->
-  <main>
+  <main class="bg-navy">
     <header class="text-center">
       <img src="images/tp_logo.svg" alt="" class="logo">
     </header>
@@ -83,10 +83,10 @@
       <form>
         <div class="form-group">
           <!-- You can change FOCUS style color just using simple class -->
-          <input type="email" class="form-control form-green input-lg" id="exampleInputEmail1" placeholder="Email">
+          <input type="email" class="form-control form-green" id="exampleInputEmail1" placeholder="Email">
         </div>
         <div class="form-group">
-          <input type="password" class="form-control form-coral input-lg" id="exampleInputPassword1" placeholder="Password">
+          <input type="password" class="form-control form-coral" id="exampleInputPassword1" placeholder="Password">
         </div>
         <div class="checkbox">
           <label for="">
@@ -94,8 +94,8 @@
           </label>
         </div>
         <div class="row">
-          <div class="col-xs-6"><button type="button" class="btn-lg btn btn-outline-primary btn-pill btn-block">Cancel</button></div>
-          <div class="col-xs-6"><button type="submit" class="btn-lg btn btn-primary btn-pill btn-block">Sign up</button></div>
+          <div class="col-xs-6"><button type="button" class="btn btn-outline-primary btn-pill btn-block">Cancel</button></div>
+          <div class="col-xs-6"><button type="submit" class="btn btn-primary btn-pill btn-block">Sign up</button></div>
         </div>
       </form>
         </div>
@@ -199,6 +199,7 @@
         <hr>
         <p class="lead">Lead paragraph text</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam itaque, accusantium dolorum ullam, modi pariatur aliquid perspiciatis voluptatibus aperiam ipsa cumque, cum hic mollitia harum deserunt nemo totam autem assumenda.</p>
+        <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam itaque, accusantium dolorum ullam, modi pariatur aliquid perspiciatis voluptatibus aperiam ipsa cumque, cum hic mollitia harum deserunt nemo totam autem assumenda.</p>
         <hr>
         <p class="text-primary">.text-primary</p>
         <p class="text-coral">.text-coral</p>
@@ -249,17 +250,27 @@
         <a href="#" class="btn btn-pill btn-outline-link">Link</a>
         <hr>
         <div class="form-group">
-          <label for="exampleInputEmail1">.form-control</label>
+          <label for="exampleInputEmail1" class="text-primary">.form-control</label>
           <input type="email" class="form-control" id="exampleInputEmail1" placeholder=".form-control">
         </div>
         <div class="form-group">
-          <label for="exampleInputEmail1">.form-control .form-coral</label>
+          <label for="exampleInputEmail1" class="text-coral">.form-control .form-coral</label>
           <input type="email" class="form-control form-coral" id="exampleInputEmail1" placeholder=".form-control .form-coral">
         </div>
         <div class="form-group">
-          <label for="exampleInputEmail1">.form-control .form-green</label>
+          <label for="exampleInputEmail1" class="text-green">.form-control .form-green</label>
           <input type="email" class="form-control form-green" id="exampleInputEmail1" placeholder=".form-control .form-green">
         </div>
+        <div class="checkbox">
+    <label>
+      <input type="checkbox"> Check me out
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio"> Check me out
+    </label>
+  </div>
       </div>
     </section>
   </main>
